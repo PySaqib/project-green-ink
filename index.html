@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Green Ink by Saqib Ali</title>
+
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="css/index-css.css" type="text/css" />
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
+
+</head>
+<body>
+
+    <header>
+
+        <nav>
+
+            <div id="logo">Project Green Ink</div>
+
+            <div id="navLinks">
+
+                <a href="mailto:pysaqib@gmail.com">
+                    <div class="navLink">CONTACT</div>
+                </a>
+                <div class="navLink">/</div>
+                
+                <a href="about.html">
+                    <div class="navLink">ABOUT</div>
+                </a>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+    <section id="artSection">
+
+
+    </section>
+    
+
+    <script type="text/javascript">
+
+    function shuffle(array) {
+
+        for (let i = array.length - 1; i > 0; i--) {
+            let j = Math.floor(Math.random() * (i + 1));
+            [array[i], array[j]] = [array[j], array[i]];
+        }
+
+    }
+    
+    const images = [
+
+        "hands_tied.jpg",
+        "corona_hands.jpg",
+        "hand_galaxy.jpg",
+        "masjid.jpg",
+        "pakistan_day.jpg",
+        "sudan_massacre.jpg"
+
+    ];
+
+    shuffle(images);
+
+    var sec = document.getElementById('artSection');
+
+    for (var i = 0; i < images.length; i++) {
+
+        var data = `<img src="assets/${images[i]}" alt="${images[i]}" id="handsTied">`;
+
+        sec.innerHTML += data;
+
+    }
+
+    </script>
+
+</body>
+</html>

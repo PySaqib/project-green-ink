@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Reenie+Beanie&display=swap');
+
+$body-bg: #fff;
+$logo-color: #10ac84;
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+a {
+    color: $logo-color;
+    text-decoration: none;
+    font-family: inherit;
+
+    &:hover {
+        text-decoration: underline;
+    }
+
+}
+
+
+body {
+
+    background-color: $body-bg;
+
+}
+
+header {
+    width: 100%;
+    text-align: center;
+    padding: 15px 0px;
+
+    nav {
+        
+        #logo {
+            font-family: "Reenie Beanie";
+            font-size: 8vmax;
+            color: $logo-color;
+        }
+
+        #navLinks {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            width: 25%;
+            max-width: 150px;
+            margin: 0 auto;
+            padding: 15px 0px;
+            text-align: center;
+            
+            .navLink {
+                font-size: 10px;
+            }
+
+        }
+        
+    }
+}
+
+section {
+
+    display: grid !important;
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+
+    img {
+
+        width: 100%;
+        
+    }
+
+}
+
+
+// Styling for About Page
+
+#about {
+
+    font-size: 2vw;
+    font-family: "Montserrat", sans-serif;
+    width: 80%;
+    max-width: 800px;
+    line-height: 2.2;
+    margin: 0 auto;
+    padding-top: 30px;
+    text-align: center;
+
+}
+
+// @media (max-width: 500px) {
+
+//     section {
+//         grid-template-columns: auto;
+//     }
+
+// }
